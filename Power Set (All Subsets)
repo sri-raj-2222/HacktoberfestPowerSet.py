@@ -1,0 +1,7 @@
+def power_set(nums):
+    res = [[]]
+    for num in nums:
+        res.append([num])  # ❌ Only adds single-element subsets
+    return res
+
+print(power_set([1, 2, 3]))  # Expected 8 subsets
